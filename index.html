@@ -12,7 +12,7 @@ h2{margin:0;font-size:20px}.desc{color:#8b949e;font-size:14px;line-height:1.6;ma
 .code span{font-family:monospace;font-size:17px;letter-spacing:1px}.code small{color:#8b949e}
 .copy{background:#21262d;color:#e6edf3;border:1px solid #30363d;border-radius:8px;padding:6px 12px;cursor:pointer}
 .go{display:block;text-align:center;background:#f0b90b;color:#0d1117;font-weight:700;font-size:18px;padding:14px;border-radius:10px;text-decoration:none}
-footer{max-width:960px;margin:24px auto;padding:16px;color:#8b949e;font-size:13px;text-align:center;line-height:1.7}
+.guide{display:block;text-align:center;margin-top:10px;color:#8b949e;font-size:14px;text-decoration:none}.guide:hover{color:#f0b90b}footer{max-width:960px;margin:24px auto;padding:16px;color:#8b949e;font-size:13px;text-align:center;line-height:1.7}
 .warn{color:#f85149;font-weight:600}
 </style></head><body>
 <header><h1>币圈返佣导航</h1><p>主流交易所官方邀请链接与邀请码，注册时填写邀请码即可</p></header>
@@ -20,13 +20,13 @@ footer{max-width:960px;margin:24px auto;padding:16px;color:#8b949e;font-size:13p
 <footer><p>本站仅提供邀请链接汇总，不构成任何投资建议。</p></footer>
 <script>
 var X=[
-{n:"币安 Binance",i:"logos/binance.svg",c:"#1e2329;padding:7px",d:"全球交易量领先的综合性数字资产交易平台，提供现货、合约等多种产品。",u:"https://www.bsmkweb.cc/register?ref=I80LVL3E",k:"I80LVL3E"},
-{n:"欧易 OKX",i:"logos/okx.svg",c:"#ffffff;padding:6px",d:"老牌综合性交易平台，覆盖现货、衍生品及Web3钱包等服务。",u:"https://www.mitxcqvwnhj.com/join/7494762",k:"7494762"},
-{n:"Bitget",i:"logos/bitget.svg",c:"transparent",d:"以合约与跟单交易见长的数字资产交易平台。",u:"https://partner.bitget.host/bg/8eykzxqw",k:"Btc01234"},
-{n:"Gate",i:"logos/gate.png",c:"transparent",d:"上线币种丰富的老牌交易平台，提供现货、合约及理财等产品。",u:"https://www.gatesites.cc/share/PPPPCCCC",k:"PPPPCCCC"}];
+{n:"币安 Binance",g:"binance",i:"logos/binance.svg",c:"#1e2329;padding:7px",d:"全球交易量领先的综合性数字资产交易平台，提供现货、合约等多种产品。",u:"https://www.bsmkweb.cc/register?ref=I80LVL3E",k:"I80LVL3E"},
+{n:"欧易 OKX",g:"okx",i:"logos/okx.svg",c:"#ffffff;padding:6px",d:"老牌综合性交易平台，覆盖现货、衍生品及Web3钱包等服务。",u:"https://www.mitxcqvwnhj.com/join/7494762",k:"7494762"},
+{n:"Bitget",g:"bitget",i:"logos/bitget.svg",c:"transparent",d:"以合约与跟单交易见长的数字资产交易平台。",u:"https://partner.bitget.host/bg/8eykzxqw",k:"Btc01234"},
+{n:"Gate",g:"gate",i:"logos/gate.png",c:"transparent",d:"上线币种丰富的老牌交易平台，提供现货、合约及理财等产品。",u:"https://www.gatesites.cc/share/PPPPCCCC",k:"PPPPCCCC"}];
 var L=document.getElementById("list");
 X.forEach(function(e){var a=document.createElement("div");a.className="card";
-a.innerHTML='<div class="top"><div class="badge" style="background:'+e.c+'"><img src="'+e.i+'" alt="'+e.n+' logo" width="48" height="48"></div><h2>'+e.n+'</h2></div><p class="desc">'+e.d+'</p><div class="code"><div><small>邀请码 </small><span>'+e.k+'</span></div><button class="copy">复制</button></div><a class="go" href="'+e.u+'" target="_blank" rel="noopener nofollow noreferrer">立即注册</a>';
+a.innerHTML='<div class="top"><div class="badge" style="background:'+e.c+'"><img src="'+e.i+'" alt="'+e.n+' logo" width="48" height="48"></div><h2>'+e.n+'</h2></div><p class="desc">'+e.d+'</p><div class="code"><div><small>邀请码 </small><span>'+e.k+'</span></div><button class="copy">复制</button></div><a class="go" href="'+e.u+'" target="_blank" rel="noopener nofollow noreferrer">立即注册</a><a class="guide" href="/guides/'+e.g+'.html">注册教程 →</a>';
 var b=a.querySelector(".copy");b.onclick=function(){var done=function(){b.textContent="已复制";setTimeout(function(){b.textContent="复制"},1500)};
 if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(e.k).then(done)}else{var t=document.createElement("textarea");t.value=e.k;document.body.appendChild(t);t.select();document.execCommand("copy");t.remove();done()}};
 L.appendChild(a)});
