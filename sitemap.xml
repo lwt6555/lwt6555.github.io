@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://btc520.net/</loc></url></urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://btc520.net/</loc></url>
+<url><loc>https://btc520.net/guides/binance.html</loc></url>
+<url><loc>https://btc520.net/guides/okx.html</loc></url>
+<url><loc>https://btc520.net/guides/bitget.html</loc></url>
+<url><loc>https://btc520.net/guides/gate.html</loc></url>
+</urlset>
